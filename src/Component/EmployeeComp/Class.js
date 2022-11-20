@@ -1,9 +1,10 @@
 import empData from "../../APIS/classAPI.json";
 import ClassData from "./ClassData";
-const class3EmpData = empData.filter((data) => {
-  return data.classID === "3";
-});
-function Class3() {
+
+function Class(props) {
+  const classEmpData = empData.filter((data) => {
+    return data.classID === props.class;
+  });
   return (
     <div className="cart">
       <div>
@@ -13,7 +14,7 @@ function Class3() {
             marginBottom: "30px",
           }}
         >
-          CLASS 3 EMPLOYEE LIST
+          CLASS {props.class} EMPLOYEE LIST
         </h1>
         <div style={{ textAlign: "center" }}>
           <hr
@@ -25,7 +26,7 @@ function Class3() {
               marginTop: "20px",
             }}
           />
-        </div>{" "}
+        </div>
         <div>
           <table>
             <thead>
@@ -37,11 +38,11 @@ function Class3() {
                 <th>Salary</th>
               </tr>
             </thead>
-            <ClassData data={class3EmpData} />
+            <ClassData data={classEmpData} />
           </table>
         </div>
       </div>
     </div>
   );
 }
-export default Class3;
+export default Class;

@@ -17,16 +17,16 @@ function Navbar() {
               Employee
               <div className={"DDMenu"}>
                 <div className={"DDMenuItem"}>
-                  <Link to="/class1">Class 1</Link>
+                  <Link to="/class-1-Employee">Class 1</Link>
                 </div>
                 <div className={"DDMenuItem"}>
-                  <Link to="/class2">Class 2</Link>
+                  <Link to="/class-2-Employee">Class 2</Link>
                 </div>
                 <div className={"DDMenuItem"}>
-                  <Link to="/class3">Class 3</Link>
+                  <Link to="/class-3-Employee">Class 3</Link>
                 </div>
                 <div className={"DDMenuItem"}>
-                  <Link to="/class4">Class 4</Link>
+                  <Link to="/class-4-Employee">Class 4</Link>
                 </div>
               </div>
             </div>
