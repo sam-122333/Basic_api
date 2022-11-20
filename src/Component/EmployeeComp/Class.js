@@ -14,7 +14,7 @@ function Class(props) {
             marginBottom: "30px",
           }}
         >
-          CLASS {props.class} EMPLOYEE LIST
+          {props.title}
         </h1>
         <div style={{ textAlign: "center" }}>
           <hr
@@ -27,20 +27,22 @@ function Class(props) {
             }}
           />
         </div>
-        <div>
-          <table>
-            <thead>
-              <tr>
-                <th>Sl.No</th>
-                <th>Name of Employee & Designation</th>
-                <th>Category of the Employee</th>
-                <th>Employee Number</th>
-                <th>Salary</th>
-              </tr>
-            </thead>
-            <ClassData data={classEmpData} />
-          </table>
-        </div>
+        {props.showComp && (
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Sl.No</th>
+                  <th>Name of Employee & Designation</th>
+                  <th>Category of the Employee</th>
+                  <th>Employee Number</th>
+                  <th>Salary</th>
+                </tr>
+              </thead>
+              <ClassData data={classEmpData} />
+            </table>
+          </div>
+        )}
       </div>
     </div>
   );
