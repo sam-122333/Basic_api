@@ -15,7 +15,7 @@ function App() {
         <Route
           exact
           path="/"
-          element={<Class showComp={false} title={"THIS IS THE HOME PAGE"} />}
+          element={<Class showComp={false} title={"THIS IS THE HOME PAGE 1"} />}
         />
         <Route exact path="/todolist" element={<ListCart />} />
         <Route
